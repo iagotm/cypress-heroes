@@ -1,0 +1,14 @@
+ {
+ "userSuccess":{
+   "username": "jonasbank",
+   "password": "test123"
+  },
+  "userSuccess2":{
+   "username": "Arvilla_Hegmann",
+   "password": "GjWovtg2hr"
+  },
+  "userFail":{
+   "username": "Test",
+   "password": "test"
+  }
+}
