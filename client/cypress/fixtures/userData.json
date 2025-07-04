@@ -1,14 +1,22 @@
- {
- "userSuccess":{
-   "username": "jonasbank",
-   "password": "test123"
+{
+  "userSuccess": {
+    "email": "test@test.com",
+    "password": "test123"
   },
-  "userSuccess2":{
-   "username": "Arvilla_Hegmann",
-   "password": "GjWovtg2hr"
+  "userAdminSuccess": {
+    "email": "admin@test.com",
+    "password": "test123"
   },
-  "userFail":{
-   "username": "Test",
-   "password": "test"
+  "userFail": {
+    "email": "test@test.com",
+    "password": "test"
+  },
+  "userEmpty": {
+    "email": " ",
+    "password": " "
+  },
+  "userEmailFail": {
+    "email": "test.com",
+    "password": "test123"
   }
 }
