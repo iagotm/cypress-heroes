@@ -80,59 +80,7 @@ describe('Hero Tests', () => {
      cy.log('ID do Heroi criado:', heroId);
    });
   });
-
-  /*it('Edit Hero', () => {
-    // Espera até o ID ser definido
-   cy.wrap(null).should(() => {
-     expect(heroId).to.exist;
-   });
-    cy.visit('http://localhost:3000/heroes');
-
-    cy.get('li > .undefined').click();
-    cy.get('input[name="email"]').type('admin@test.com');
-    cy.get('input[name="password"]').type('test123');
-    cy.get('button').contains('Sign in').click();
-
-    cy.get("[href='/heroes/new']").should('be.visible');
-    cy.visit(`/heroes/new`);
-    // Acessa a página de edição usando o ID
-    cy.visit(`http://localhost:3000/heroes/${heroId}/edit`);
-
-    cy.get('[data-cy=nameInput]').clear().type('Hero Updated');
-    cy.get('[data-cy=priceInput]').clear().type('99');
-    cy.get('[data-cy=fansInput]').clear().type('100');
-    cy.get('[data-cy=savesInput]').clear().type('88');
-    cy.get('[data-cy=powersSelect]').select(['Flying']);
-    cy.get('button').contains('Submit').click();
-  }); */
-
-  /*it('Delete Hero', () => {
-    // Espera até o ID ser definido
-   //cy.wrap(null).should(() => {
-   //  expect(heroId).to.exist;
-   //});
-    cy.visit('http://localhost:3000/heroes');
-
-    cy.get('li > .undefined').click();
-    cy.get('input[name="email"]').type('admin@test.com');
-    cy.get('input[name="password"]').type('test123');
-    cy.get('button').contains('Sign in').click();
-
-     cy.contains('Hero Updated') // encontra o texto com o nome do herói criado
-    .parents('[data-cy="hero-card"]') // container do herói (coloque aqui o seletor correto do seu card!)
-    .find('[data-cy="trash"]') // botão de deletar
-    .click();
-
-     cy.get('.modal-container').should('be.visible');
-
-     // Clica no botão "Yes" para confirmar a exclusão
-     cy.get('.modal-container').contains('Yes').click();
-
-     // Verifica se o herói não aparece mais na lista (opcional)
-     cy.contains('New Test Hero').should('not.exist');
-  });*/
-
- /* it('Edit Delete Hero', () => {
+  it('Delete Hero - Edit Camp', () => {
     // Espera até o ID ser definido
    cy.wrap(null).should(() => {
      expect(heroId).to.exist;
@@ -154,5 +102,5 @@ describe('Hero Tests', () => {
 
      // Clica no botão "Yes" para confirmar a exclusão
      cy.get('.modal-container').contains('Yes').click();
-  }); */
+  });
 });

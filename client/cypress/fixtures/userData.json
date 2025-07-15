@@ -18,5 +18,13 @@
   "userEmailFail": {
     "email": "test.com",
     "password": "test123"
+  },
+  "userEmailEmpty": {
+    "email": " ",
+    "password": "test123"
+  },
+  "userPasswordEmpty": {
+    "email": "test@test.com",
+    "password": " "
   }
 }

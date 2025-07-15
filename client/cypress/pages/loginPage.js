@@ -48,6 +48,10 @@ class LoginPage {
     cy.get(this.selectorsList().errorMessage).eq(1).contains('Password is required');
   }
 
+   checkPasswordMissing2() {
+    cy.get(this.selectorsList().errorMessage).eq(0).contains('Password is required');
+  }
+
   checkWrongData() {
     cy.get(this.selectorsList().errorMessage).eq(0).contains('Invalid email or password');
   }

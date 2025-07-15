@@ -40,4 +40,18 @@ describe('Teste de Login', () => {
     loginPage.loginWithUser(userData.userEmailFail.email, userData.userEmailFail.password)
     loginPage.checkWrongEmail();
  });
+
+ it('Login Fail - Email em Branco', () => {
+    loginPage.acessLoginPage();
+    loginPage.loginUserButton();
+    loginPage.loginWithUser(userData.userEmailEmpty.email, userData.userEmailEmpty.password)
+    loginPage.checkEmailMissing();
+ });
+
+ it('Login Fail - Senha em Branco', () => {
+    loginPage.acessLoginPage();
+    loginPage.loginUserButton();
+    loginPage.loginWithUser(userData.userPasswordEmpty.email, userData.userPasswordEmpty.password)
+    loginPage.checkPasswordMissing2();
+ });
 })
